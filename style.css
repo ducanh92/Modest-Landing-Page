@@ -1,0 +1,1042 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #292f36;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #292f36;
+}
+h4{
+    text-transform: uppercase;
+    color: #292f36;
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: normal;
+}
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ccd0d7;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.container {
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+.left-border {
+    position: relative;
+    margin-left: 24px;
+}
+.left-border::before {
+    display: block;
+    content: " ";
+    width: 10px;
+    height: 35px;
+    background-color: #e1e6ea;
+    position: absolute;
+    top: 4px;
+    left: -24px;
+}
+/** Header **/
+header {
+    height: 81px;
+    line-height: 81px;
+    background-color: #1d2126;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container label {
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+header .container input {
+    display: none;
+}
+header .container ul li {
+    list-style: none;
+    float: left;
+}
+header .container ul li a {
+    color: #a4aead;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 10px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    margin-left: 16px;
+}
+header .container ul li a:hover {
+    border: 2px solid #5b6168;
+}
+header .container ul li a.active {
+    border: 2px solid #23b7a4;
+    color: #23b7a4;
+    margin-left: 0px;
+}
+/** Hero section **/
+section#hero {
+    height: 660px;
+    background-image: url('images/hero.jpg');
+    background-color: #3a454d;
+    background-position: center center;
+}
+section#hero .container h2 {
+    color: white;
+    max-width: 654px;
+}
+section#hero .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+section#hero .container p {
+    margin-top: 24px;
+    max-width: 654px;
+}
+section#hero .container div {
+    margin-top: 36px;
+    font-size: 0px;
+    max-width: 654px;
+}
+section#hero .container div a {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-right: 11px;
+    display: inline-block;
+}
+section#hero .container div :last-child {
+    margin-right: 0px;
+}
+section#hero .container div a:hover {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+section#hero .container ul {
+    position: absolute;
+    font-size: 0px;
+    right: 15px;
+    bottom: 30px;
+}
+section#hero .container ul li {
+    display: inline-block;
+    font-size: 16px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+section#hero .container ul li:hover {
+    border-color: #23b7a4;
+}
+section#hero .container ul :first-child {
+    margin-left: 0px;
+}
+section#hero .container ul :nth-child(2) {
+    background-color: white;
+}
+section#hero .container ul .active:hover {
+    border-color: white;
+}
+section#hero .container ul li a{
+    display: block;
+    text-indent: -1000000px;
+}
+/** About section **/
+section#about {
+    border-bottom: 1px solid #dde1e4;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+section#about .container h2 {
+    color: #292f36;
+    margin-bottom: 57px;
+}
+section#about .container p {
+    color: #8d8f92;
+}
+section#about .container > div {
+    display: flex;
+}
+section#about .container > div > div:first-child {
+    max-width: 653px;
+    margin-right: 30px;
+}
+section#about .container > div > div:last-child {
+    max-width: 457px;
+}
+section#about .container > div > div:first-child > p {
+    margin-bottom: 26px;
+}
+section#about .container > div > div:first-child > :nth-child(2) {
+    margin-bottom: 0px;
+}
+section#about .container > div > div:first-child > p > span {
+    color: #8d8f92;
+    font-weight: bold;
+}
+section#about .container > div > div:first-child > ul > li {
+    list-style: none;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0;
+    margin-right: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 99px;
+}
+section#about .container > div > div:first-child > ul > li:hover {
+    background-color: #d0d5d9;
+}
+section#about .container > div > div:first-child > ul > :nth-child(1) {
+    background-image: url('images/socials/facebook.png');
+}
+section#about .container > div > div:first-child > ul > :nth-child(2) {
+    background-image: url('images/socials/twitter.png');
+}
+section#about .container > div > div:first-child > ul > :nth-child(3) {
+    background-image: url('images/socials/google.png');
+}
+section#about .container > div > div:first-child > ul > :nth-child(4) {
+    background-image: url('images/socials/dribbble.png');
+}
+section#about .container > div > div:first-child > ul > :nth-child(5) {
+    background-image: url('images/socials/behance.png');
+    margin-right: 0px;
+}
+section#about .container > div > div:first-child > ul > li > a {
+    display: block;
+    text-indent: -1000000px;
+    width: 100%;
+    height: 100%;
+}
+section#about .container > div > div:last-child > ol {
+    counter-reset: about;
+    margin-top: -4px;
+}
+section#about .container > div > div:last-child > ol > li {
+    list-style: none;
+    position: relative;
+    padding-left: 70px;
+}
+section#about .container > div > div:last-child > ol > li::before {
+    display: block;
+    counter-increment: about;
+    content: ""counters(about, ".", decimal-leading-zero)"";
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: #23b7a4;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+section#about .container > div > div:last-child > ol > li > h3 {
+    margin-bottom: 3px;
+}
+section#about .container > div > div:last-child > ol > li > p {
+    margin-bottom: 18px;
+}
+section#about .container > div > div:last-child > ol > :last-child > p {
+    margin-bottom: 0px;
+}
+/** Team section **/
+section#team {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+section#team #team-list {
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section#team #team-list > div {
+    position: relative;
+    width: calc( (100% - 90px) / 4);
+}
+section#team #team-list > div > img {
+    display: block;
+    max-width: 100%;
+}
+section#team #team-list .info {
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e1e6ea;
+    padding-left: 20px;
+}
+section#team #team-list .info h4 {
+    font-size: 16px;
+    line-height: 35px;
+}
+section#team #team-list .info p {
+    color: #8d8f92;
+    font-size: 14px;
+    line-height: 26px;
+}
+section#team #team-list > div > .mask {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 74px);
+    top: 0px;
+    left: 0px;
+    background-color: rgba(229, 233, 235, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+section#team #team-list > div > .mask > ul li {
+    list-style: none;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: #3a454d;
+    margin-right: 1px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section#team #team-list > div > .mask > ul > li:hover {
+    background-color: #4e5a62;
+}
+section#team #team-list > div > .mask > ul > :last-child {
+    margin-right: 0px;
+}
+section#team #team-list > div > .mask > ul > :nth-child(1) {
+    background-image: url('images/socials/twitter.png');
+}
+section#team #team-list > div > .mask > ul > :nth-child(2) {
+    background-image: url('images/socials/facebook.png');
+}
+section#team #team-list > div > .mask > ul > :nth-child(3) {
+    background-image: url('images/socials/linkedin.png');
+}
+section#team #team-list > div > .mask > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -1000000px;
+}
+section#team #team-list div:hover .mask {
+    visibility: visible;
+}
+section#team #team-list div:hover .info {
+    background-color: #3a454d;
+}
+section#team #team-list div:hover h4,
+section#team #team-list div:hover p {
+    color: white;
+}
+/** Work section **/
+section#work {
+    background-color: #3a454d;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+section#work .left-border::before {
+    background-color: #4e5a62;
+}
+section#work .container > h2 {
+    color: white;
+    margin-bottom: 60px;
+}
+section#work > .container > #pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section#work > .container > #pics > div {
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 30px;
+    position: relative;
+}
+section#work > .container > #pics > div > .mask {
+    position: absolute;
+    background-color: rgba(49, 58, 65, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+section#work > .container > #pics > div:hover > .mask {
+    display: block;
+}
+section#work > .container > #pics > div > .mask > h4 {
+    background-color: #292f36;
+    color: white;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+section#work > .container > #pics > div > .mask > button {
+    position: absolute;
+    background-color: transparent;
+    top: calc(50% - 40px);
+    left: 50%;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+section#work > .container > div:last-child {
+    text-align: center;
+}
+section#work > .container > div:last-child > button {
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+section#work > .container > div:last-child > button:hover {
+    background-color: #23b7a4;
+    border-color: #23b7a4;
+}
+/** Action section **/
+section#action {
+    padding-top: 80px;
+    padding-bottom: 71px;
+}
+section#action > h2 {
+    margin-bottom: 90px;
+}
+section#action > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+section#action > ul > li {
+    list-style: none;
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 86px;
+    text-align: center;
+}
+section#action > ul > li:nth-child(4n+4) {
+    margin-right: 0px;
+}
+section#action > ul > li > img {
+    margin-bottom: 23px;
+}
+section#action > ul > li > h4 {
+    margin-bottom: 17px;
+}
+section#action > ul > li > p {
+    color: #8d8f92;
+}
+/** Features section **/
+section#features {
+    background-color: #3a454d;
+    padding-top: 85px;
+    padding-bottom: 115px;
+}
+section#features > .container > h2 {
+    color: white;
+    margin-bottom: 60px;
+}
+section#features h2::before {
+    background-color: #4e5a62;
+}
+section#features > .container > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+section#features > .container > div > div {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+section#features > .container > div > div:nth-child(3n + 3) {
+    margin-right: 0px;
+}
+section#features > .container > div > div > img {
+    display: block;
+    margin-bottom: 42px;
+}
+section#features > .container > div > div > h4 {
+    color: white;
+    margin-bottom: 13px;
+}
+section#features > .container > div > div > p {
+    color: #dcdfe1;
+    text-align: left;
+}
+/** Contact section **/
+section#contact {
+    padding-top: 64px;
+    padding-bottom: 95px;
+    position: relative;
+}
+section#contact > iframe {
+    position: absolute;
+    width: 100%;
+    height: 346px;
+    top: 159px;
+    left: 0px;
+}
+section#contact > .container {
+    height: 700px;
+}
+section#contact > .container > h2 {
+    margin-bottom: 60px;
+}
+section#contact > .container > div {
+    position: absolute;
+    top: 376px;
+    z-index: 1;
+    display: flex;
+}
+section#contact > .container > div > div {
+    width: calc( (100% - 30px) / 2);
+    padding-top: 186px;
+    margin-right: 30px;
+}
+section#contact > .container > div > div > h4 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 10px;
+    margin-bottom: 32px;
+}
+section#contact > .container > div > div > p {
+    color: #8d8f92;
+}
+section#contact > .container > div > div > p > span {
+    font-weight: bold;
+}
+section#contact > .container > div > form {
+    width: calc( (100% - 30px) / 2);
+    padding: 24px 30px 0px 30px;
+    background-color: white;
+}
+section#contact > .container > div > form label {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #8d8f92;
+}
+section#contact > .container > div > form > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+section#contact > .container > div > form > div:first-child > div {
+    width: calc( (100% - 15px) / 2);
+}
+section#contact > .container > div > form > div > div > input {
+    height: 44px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #eaeef1;
+    border: none;
+    padding: 0px 15px;
+    font-size: 17px;
+}
+section#contact > .container > div > form > div:nth-child(2) > textarea {
+    height: 159px;
+    overflow: auto;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #eaeef1;
+    border: none;
+    margin-bottom: 30px;
+    color: #292f36;
+    padding: 10px 15px;
+    font-size: 17px;
+}
+section#contact > .container > div > form > div > div > input:focus,
+section#contact > .container > div > form > div:nth-child(2) > textarea:focus {
+    outline: none;
+}
+section#contact > .container > div > form > div:last-child > button {
+    padding: 18px 27px;
+    border: none;
+    background-color: #23b7a4;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+section#contact > .container > div > form > div:last-child > button:hover {
+    background-color: #3de0cb;
+}
+/** Footer **/
+footer {
+    background-color: #3a454d;
+    height: 95px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+footer .container ul li {
+    float: left;
+    list-style: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
+footer > .container > ul > :nth-child(1) {
+    background-image: url('images/socials/twitter.png');
+    margin-left: 0px;
+}
+footer > .container > ul > :nth-child(2) {
+    background-image: url('images/socials/facebook.png');
+}
+footer > .container > ul > :nth-child(3) {
+    background-image: url('images/socials/skype.png');
+    background-size: 20px 20px;
+}
+footer > .container > ul > :nth-child(4) {
+    background-image: url('images/socials/behance.png');
+    background-position: -1px 5px;
+    margin-left: 18px;
+    margin-right: 3px;
+}
+footer > .container > ul > :nth-child(5) {
+    background-image: url('images/socials/linkedin.png');
+    margin-left: 10px;
+}
+footer > .container > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -1000000px;
+}
+/** Responsive **/
+@media screen and (max-width: 960px) {
+    section#hero > .container > h2,
+    section#hero > .container > p,
+    section#hero > .container > div {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    section#hero > .container > ul {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-top: 80px;
+    }
+    section#about .container > div > div:first-child {
+        width: calc( (100% - 30px) /2);
+    }
+    section#about .container > div > div:last-child {
+        width: calc( (100% - 30px) /2);
+    }
+    section#contact > .container > div > form > div:first-child {
+        display: block;
+        margin-bottom: 0px;
+    }
+    section#contact > .container > div > form > div:first-child > div {
+        width: 100%;
+    }
+    section#contact > .container > div > form > div > div > input {
+        margin-bottom: 20px;
+    }
+    /** Responsive hover **/
+    section#team #team-list > div {
+        width: calc( (100% - 30px) / 2);
+        margin-bottom: 30px;
+    }
+    section#team #team-list > div > img {
+        width: 100%;
+    }
+    section#team #team-list .info {
+        background-color: #3a454d;
+    }
+    section#team #team-list .info h4,
+    section#team #team-list .info p {
+        text-align: left;
+        color: white;
+    }
+    section#team > #team-list > div > .mask {
+        position: absolute;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        right: 0px;
+        bottom: 12px;
+        top: auto;
+        left: auto;
+        visibility: visible;
+    }
+    section#team > #team-list > div > .mask ul {
+        position: static;
+    }
+
+    section#work > .container > #pics > div {
+        width: calc((100% - 30px) / 2);
+    }
+    section#work > .container > #pics > div img {
+        width: 100%;
+        display: block;
+    }
+    section#work > .container > #pics > div > .mask {
+        position: static;
+        background-color: #292f36;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 15px;
+    }
+    section#work > .container > #pics > div:hover > .mask {
+        display: flex;
+    }
+    section#work > .container > #pics > div > .mask > h4 {
+        position: static;
+        text-align: left;
+        padding-left: 0px;
+    }
+    section#work > .container > #pics > div > .mask > button {
+        position: static;
+        display: block;
+    }
+    section#work > .container > #pics > div > .mask > button:focus{
+        outline: none;
+    }
+    section#work > .container > #pics > div > .mask > button:active {
+        background-color: #23b7a4;
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px;
+        line-height: 60px;
+    }
+    header .container {
+        position: relative;
+    }
+    header .container ul {
+        margin-top: 60px;
+        margin-right: -15px;
+        width: 260px;
+        background-color: rgb(139, 122, 122);
+        z-index: 2;
+        display: none;
+    }
+    header .container label {
+        position: absolute;
+        display: block;
+        float: right;
+        right: 15px;
+    }
+    header .container ul li {
+        float: none;
+        display: block;
+        max-height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #4B4B5B;
+        padding-left: 20px;
+    }
+    header .container ul li:active {
+        background-color: #23b7a4;
+    }
+    header .container ul li a {
+        color: white;
+        margin-left: 0px;
+        padding: 0px 0px;
+        border: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    header .container ul li a:hover {
+        border: none;
+    }
+    header .container ul li a.active {
+        border: none;
+        color: white;
+        margin-left: 0px;
+    }
+    header .container > input:checked + ul {
+        display: block;
+    }
+    section#hero {
+        height: 400px;
+    }
+    section#hero > .container > div {
+        margin-top: 20px;
+    }
+    section#hero .container p {
+        margin-top: 15px;
+    }
+    section#hero > .container > ul {
+        margin-top: 45px;
+    }
+    section#about {
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+    section#about .container h2 {
+        margin-bottom: 20px;
+    }
+    section#about .container > div > div:first-child > p {
+        margin-bottom: 10px;
+    }
+    section#about .container > div > div:first-child > ul {
+        display: flex;
+        justify-content: center;
+    }
+    section#about .container > div > div:first-child > ul > li {
+        margin-top: 30px;
+        float: none;
+    }
+    section#about .container > div {
+        display: block;
+    }
+    section#about .container > div > div:first-child,
+    section#about .container > div > div:last-child {
+        width: 100%;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    section#team {
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+    section#team #team-list {
+        margin-top: 30px;
+    }
+    section#work {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    section#work .container > h2 {
+        margin-bottom: 35px;
+    }
+    section#work > .container > div:last-child > button {
+        margin-top: 0px;
+    }
+    section#action {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+    section#action > h2 {
+        margin-bottom: 40px;
+    }
+    section#action > ul > li {
+        width: calc( (100% - 30px) / 2);
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    section#features {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    section#features > .container > h2 {
+        margin-bottom: 30px;
+    }
+    section#features > .container > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section#features > .container > div > div {
+        width: 80%;
+        margin-right: 0px;
+        margin-bottom: 2-px;
+        text-align: center;
+    }
+    section#features > .container > div > div > img {
+        display: block;
+        margin: 20px auto;
+    }
+    section#features > .container > div > div > h4 {
+        font-weight: bold;
+    }
+    section#features > .container > div > div > p {
+        text-align: center;
+    }
+    section#contact {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    section#contact > .container {
+        height: auto;
+    }
+    section#contact > iframe {
+        top: 90px;
+    }
+    section#contact > .container > div {
+        padding-top: 330px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section#contact > .container > div > div {
+        width: 90%;
+        padding-top: 0px;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    section#contact > .container > div > div > h4 {
+        font-weight: bold;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    section#contact > .container > div > form {
+        width: 80%;
+        padding: 0px;
+    }
+    section#contact > .container > div > form label {
+        text-align: center;
+    }
+    section#contact > .container > div > form > div:last-child {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    section#team {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    section#team #team-list > div {
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    section#team #team-list .info {
+        background-color: #3a454d;
+    }
+}
+@media screen and (max-width: 620px) {
+    footer {
+        height: auto;
+        padding: 5px 0px;
+    }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
+    section#work > .container > #pics > div {
+        width: 100%;
+    }
+    section#work > .container > #pics > div > img {
+        width: 100%;
+        display: block;
+    }
+}
+@media screen and (max-width: 500px) {
+    section#about {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    section#about .container {
+        text-align: center;
+    }
+    section#about .container > div > div:last-child > ol > li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    section#about .container > div > div:last-child > ol > li > h3 {
+        margin-bottom: 0px;
+    }
+    section#about .container > div > div:last-child > ol > li::before {
+        top: 0px;
+        left: auto;
+    }
+    section#work {
+        padding-top: 15px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    section#action {
+        padding-top: 15px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    section#action > ul > li {
+        width: 100%;
+    }
+    section#features {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    section#features > .container > div > div {
+        width: 100%;
+    }
+    section#features > .container > div > div > h4 {
+        margin-bottom: 0px;
+    }
+    section#contact {
+        text-align: center;
+    }
+    section#contact > .container > div > div {
+        width: 100%;
+    }
+    section#contact > .container > div > form {
+        width: 100%;
+    }
+}
+
+
+
+
