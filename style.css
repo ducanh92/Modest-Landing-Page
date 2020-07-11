@@ -76,6 +76,7 @@ header .container {
 header .container label {
     color: white;
     font-size: 25px;
+    cursor: pointer;
     display: none;
 }
 header .container input {
